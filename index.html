@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivaan Dhawan | Hybrid Athlete</title>
+    <meta name="description"
+        content="Vivaan Dhawan — Hybrid Athlete pushing peak performance across sprints, football, basketball, and calisthenics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Click Spark Canvas (global) -->
+    <canvas id="sparkCanvas"></canvas>
+
+    <!-- ── PILL NAV (ReactBits style) ── -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">Vivaan Dhawan</a>
+            <div class="pill-nav-wrap">
+                <div class="pill-indicator" id="pillIndicator"></div>
+                <a href="#home" class="pill-link active" data-section="home">Home</a>
+                <a href="#about" class="pill-link" data-section="about">About</a>
+                <a href="#disciplines" class="pill-link" data-section="disciplines">Disciplines</a>
+                <a href="#gallery" class="pill-link" data-section="gallery">Gallery</a>
+                <a href="#contact" class="pill-link" data-section="contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://instagram.com/vxndwn" target="_blank" class="btn btn-ghost">Instagram</a>
+                <a href="#contact" class="btn btn-accent">Get in Touch</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+        <div class="hero-bg-img"></div>
+        <canvas id="globeCanvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-h1">Master movement.</h1>
+            <h2 class="hero-h2"><em>Defy limits.</em></h2>
+            <p class="hero-p">The hybrid athlete bridging endurance, explosive power,<br>and functional strength across
+                every domain.</p>
+            <div class="hero-btns">
+                <a href="#disciplines" class="btn btn-accent">View Disciplines</a>
+                <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            </div>
+        </div>
+        <!-- Dashboard mockup -->
+        <div class="dashboard-wrap">
+            <div class="dashboard glass-surface">
+                <div class="dash-header">
+                    <span class="dash-logo">⚡ Vivaan Stats</span>
+                    <span class="dash-title">Performance Overview</span>
+                </div>
+                <div class="dash-rows">
+                    <div class="dash-row"><span class="dash-date">2026-03-01</span><span
+                            class="dash-badge badge-green">Active</span><span>Sprint Training</span><span
+                            class="dash-dim">Track & Field</span><span class="dash-status">Completed</span></div>
+                    <div class="dash-row"><span class="dash-date">2026-02-28</span><span
+                            class="dash-badge badge-purple">Scheduled</span><span>Muscle Up Practice</span><span
+                            class="dash-dim">Calisthenics</span><span class="dash-status">In Progress</span></div>
+                    <div class="dash-row"><span class="dash-date">2026-02-27</span><span
+                            class="dash-badge badge-green">Active</span><span>Court Drills</span><span
+                            class="dash-dim">Basketball</span><span class="dash-status">Completed</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ABOUT (Glass Surface) ── -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="glass-panel glass-surface">
+                <h2 class="sec-title">The Hybrid <span>Athlete</span></h2>
+                <p class="sec-body">I don't just play one sport — I master movement. As a hybrid athlete, I bridge the
+                    gap between endurance, explosive power, and functional strength. Whether it's sprinting on the
+                    track, dominating the court, or defying gravity with calisthenics, my goal is peak performance
+                    across all domains.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── DISCIPLINES (Chroma Grid Cards) ── -->
+    <section id="disciplines" class="section">
+        <div class="container">
+            <div class="sec-head">
+                <h2 class="sec-title">Core <span>Disciplines</span></h2>
+                <p class="sec-sub">Mastery of movement across four distinct domains.</p>
+            </div>
+            <div class="chroma-grid">
+                <div class="chroma-card" data-color="#7B39FC">
+                    <div class="chroma-overlay"></div>
+                    <div class="chroma-content">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M13 4a1 1 0 1 0 2 0 1 1 0 0 0-2 0zM6 21l3-7 2.5 2 4-6 2.5 4" />
+                                <path d="M9 14l-3 1" />
+                            </svg></div>
+                        <h3>Track & Field</h3>
+                        <p>Specializing in sprints and endurance. Pushing the limits of human speed and stamina.</p>
+                    </div>
+                </div>
+                <div class="chroma-card" data-color="#9B59FC">
+                    <div class="chroma-overlay"></div>
+                    <div class="chroma-content">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z" />
+                                <path d="M2 12h20" />
+                            </svg></div>
+                        <h3>Football</h3>
+                        <p>Agility, teamwork, and tactical precision. Controlling the field with speed.</p>
+                    </div>
+                </div>
+                <div class="chroma-card" data-color="#6C2BD9">
+                    <div class="chroma-overlay"></div>
+                    <div class="chroma-content">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14M12 2v20M2 12h20" />
+                            </svg></div>
+                        <h3>Basketball</h3>
+                        <p>Explosive verticality and court vision. Blending athleticism with skill.</p>
+                    </div>
+                </div>
+                <div class="chroma-card" data-color="#A855F7">
+                    <div class="chroma-overlay"></div>
+                    <div class="chroma-content">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M7 8l-4 4 4 4M17 8l4 4-4 4M12 4v16" />
+                            </svg></div>
+                        <h3>Calisthenics</h3>
+                        <p>Mastery of bodyweight. Muscle ups, levers, and functional strength.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── GALLERY (Circular Gallery) ── -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="sec-head">
+                <h2 class="sec-title">In <span>Action</span></h2>
+                <p class="sec-sub">Photo gallery coming soon — stay tuned.</p>
+            </div>
+            <div class="circular-gallery" id="circularGallery">
+                <div class="cg-item">
+                    <div class="cg-placeholder">🏃‍♂️<span>Track</span></div>
+                </div>
+                <div class="cg-item">
+                    <div class="cg-placeholder">⚽<span>Football</span></div>
+                </div>
+                <div class="cg-item">
+                    <div class="cg-placeholder">🏀<span>Basketball</span></div>
+                </div>
+                <div class="cg-item">
+                    <div class="cg-placeholder">💪<span>Calisthenics</span></div>
+                </div>
+                <div class="cg-item">
+                    <div class="cg-placeholder">🏆<span>Achievements</span></div>
+                </div>
+                <div class="cg-item">
+                    <div class="cg-placeholder">🎯<span>Training</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="glass-panel glass-surface">
+                <h2 class="sec-title">Get In <span>Touch</span></h2>
+                <p class="sec-sub">Open for collaborations, sponsorships, and training inquiries.</p>
+                <div class="contact-btns">
+                    <a href="mailto:vivaandhawan08@gmail.com" class="btn btn-accent">Email Me</a>
+                    <a href="https://instagram.com/vxndwn" target="_blank" class="btn btn-ghost">Instagram</a>
+                    <a href="https://discord.gg/pa2cn8TnR2" target="_blank" class="btn btn-ghost">Discord</a>
+                </div>
+                <p class="handles">📸 @vxndwn &nbsp;&nbsp;•&nbsp;&nbsp; 💬 @vivaandhawan08</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Vivaan Dhawan. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
